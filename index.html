@@ -27,8 +27,23 @@
 <body class="font-family container mx-auto">
 
   <header>
-    <div class="navbar ----flex flex-row-reverse---   lg:bg-[#F85559] sm rounded-full">
-      <div class="navbar-start">
+    <!-- navbar section -->
+    <div class="navbar mt-10 lg:bg-[#F85559] sm rounded-full">
+      <div class="navbar-start hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 tex-2xl">
+          <li class="text-xl text-white"><a>Home</a></li>
+          <li class="text-xl text-white"><a>About Us</a></li>
+          <li class="text-xl text-white"><a>Shop</a></li>
+          <li class="text-xl text-white"><a>All Fruits</a></li>
+        </ul>
+      </div>
+      <div class="lg:navbar-center justify-center navbar-start">
+        <div class=" items-center flex gap-4">
+          <img src="./images/logo.png" alt="">
+          <h3 class="text-3xl  font-bold text-black lg:text-white">Fruit Burst</h3>
+        </div>
+      </div>
+      <div class="navbar-end ">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -36,38 +51,19 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </label>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+          <ul tabindex="0" class="menu menu-sm -ml-[100px] items-center dropdown-content mt-3 z-[1] p-2  w-52 ">
             <li><a>Home</a></li>
             <li><a>About Us</a></li>
             <li><a>Shop</a></li>
             <li><a>All Fruits</a></li>
           </ul>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 tex-2xl">
-            <li class="text-xl text-white"><a>Home</a></li>
-            <li class="text-xl text-white"><a>About Us</a></li>
-            <li class="text-xl text-white"><a>Shop</a></li>
-            <li class="text-xl text-white"><a>All Fruits</a></li>
-          </ul>
+        <div class="lg:flex items-center hidden">
+          <input class="rounded-[590px] h-10 w-60 px-8" type="text" placeholder="search here">
+          <div class="ml-52 absolute">
+            <i class=" fa fa-solid fa-magnifying-glass"></i>
+          </div>
         </div>
-
-      </div>
-
-      <div class=" items-center">
-
-        <img src="./images/logo.png" alt="">
-
-
-        <h3 class="text-3xl  font-bold ">Fruit Burst</h3>
-
-      </div>
-
-      <div class="navbar-end hidden lg:flex">
-        <form action="" class="flex ">
-          <input type="text" placeholder="Search here" class="">
-          <button class=""><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
       </div>
     </div>
 
@@ -78,12 +74,10 @@
 
     <!-- deal of the day section -->
     <div class="flex justify-between items-center flex-col lg:flex-row">
-      <div>
-        <h3 class="text-5xl mb-6 font-extrabold">Deal of the day</h3>
-        <p class="font-bold"> Contrary to popular belief, is not simply random text. It has roots in a piece of
-          classical <br>
-          Latin literature
-          from 45 BC, making it over 2000 years old.</p>
+      <div class="">
+        <h3 class="text-2xl text-center lg:text-start lg:text-5xl  mb-6 font-extrabold">Deal of the day</h3>
+        <p class="font-bold text-center lg:text-start"> Contrary to popular belief, is not simply random text. It has roots in a piece of
+          classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
       <div class="flex gap-8">
         <div>
@@ -130,7 +124,8 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
           </div>
           <!-- modal 1 -->
-          <button class="bg-transparent border-none font-medium text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+          <button class="bg-transparent border-none font-medium text-[#F85559]"
+            onclick="my_modal_1.showModal()">Details</button>
           <dialog id="my_modal_1" class="modal">
             <form method="dialog" class="modal-box">
               <div class="card card-compact ">
@@ -170,7 +165,8 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
           </div>
           <!-- modal 2-->
-          <button class="bg-transparent border-none font-medium text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
+          <button class="bg-transparent border-none font-medium text-[#F85559]"
+            onclick="my_modal_2.showModal()">Details</button>
           <dialog id="my_modal_2" class="modal">
             <form method="dialog" class="modal-box">
               <div class="card card-compact ">
@@ -210,7 +206,8 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
           </div>
           <!-- modal 3 -->
-          <button class="bg-transparent border-none font-medium text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
+          <button class="bg-transparent border-none font-medium text-[#F85559]"
+            onclick="my_modal_3.showModal()">Details</button>
           <dialog id="my_modal_3" class="modal">
             <form method="dialog" class="modal-box">
               <div class="card card-compact ">
@@ -250,7 +247,8 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
           </div>
           <!-- modal 4 -->
-          <button class="bg-transparent border-none font-medium text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
+          <button class="bg-transparent border-none font-medium text-[#F85559]"
+            onclick="my_modal_4.showModal()">Details</button>
           <dialog id="my_modal_4" class="modal">
             <form method="dialog" class="modal-box">
               <div class="card card-compact ">
@@ -362,8 +360,22 @@
 
     <!-- Why Choose Us -->
     <section class="mt-32 ">
-      <h2 class="text-5xl font-extralight">Why Choose Us</h2>
-      <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+      <h2 class="text-5xl font-bold text-center mb-5">Why Choose Us</h2>
+      <p class="text-center sp">Contrary to popular belief, is not simply random text. It has roots in a piece of
+        classical <br>
+        Latin literature from 45 BC, making it over 2000 years old.</p>
+
+      <div>
+        <div>
+
+        </div>
+        <div>
+          <h3>Dedicated Team</h3>
+          <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+
+        </div>
+
+      </div>
     </section>
 
   </main>
