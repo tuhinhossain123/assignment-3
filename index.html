@@ -22,14 +22,18 @@
     .lato-font {
       font-family: 'Lato', sans-serif;
     }
+
+    .line {
+      border: 2px solid red;
+    }
   </style>
 
 <body>
 
-  <header class="font-family container mx-auto">
+  <header class="font-family container mx-auto ">
     <!-- navbar section -->
-    <div class="navbar mt-10 lg:bg-[#F85559]  rounded-full">
-      <div class="navbar-start hidden lg:flex">
+    <div class="navbar  mt-10 lg:bg-[#F85559]  rounded-full">
+      <div class="navbar-start lg:w-full  hidden lg:flex">
         <ul class="menu menu-horizontal px-1 tex-2xl">
           <li class="text-xl text-white"><a>Home</a></li>
           <li class="text-xl text-white"><a>About Us</a></li>
@@ -37,7 +41,7 @@
           <li class="text-xl text-white"><a>All Fruits</a></li>
         </ul>
       </div>
-      <div class="lg:navbar-center justify-center  navbar-start">
+      <div class="lg:navbar-center lg:w-full w-[300px] justify-start  navbar-start">
         <div class=" items-center  flex gap-4">
           <img src="./images/logo.png" alt="">
           <h3 class="text-3xl  font-bold text-black lg:text-white">Fruit Burst</h3>
@@ -51,7 +55,7 @@
               <path stroke-cap="round" stroke-join="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </label>
-          <ul tabindex="0" class="menu menu-sm -ml-[100px] items-center dropdown-content mt-3 z-[1] p-2  w-52 ">
+          <ul tabindex="0" class="menu menu-sm -ml-[150px]  items-center dropdown-content mt-3 z-[1]  w-52 ">
             <li><a>Home</a></li>
             <li><a>About Us</a></li>
             <li><a>Shop</a></li>
@@ -67,8 +71,11 @@
       </div>
     </div>
 
-    <!--  -->
-    <div class="carousel rounded w-full relative mt-20">
+
+    <!-- Banner section -->
+
+    <!-- 1st slid -->
+    <div class="carousel rounded mx-auto  w-[99%] relative mt-20">
       <div id="slide1"
         class="carousel-item relative w-full bg-[url('./images/banner2.png')] bg-center bg-cover bg-no-repeat h-[600px]">
         <div
@@ -83,7 +90,7 @@
           <a href="#slide2" class="btn btn-circle">❯</a>
         </div>
       </div>
-      <!-- second slid -->
+      <!-- 2nd slid -->
       <div id="slide2"
         class="carousel-item relative w-full bg-[url('./images/banner3.png')] bg-center bg-cover bg-no-repeat h-[600px]">
         <div
@@ -98,7 +105,7 @@
           <a href="#slide3" class="btn btn-circle">❯</a>
         </div>
       </div>
-      <!-- slid 3 -->
+      <!-- 3rd slid -->
       <div id="slide3"
         class="carousel-item relative w-full bg-[url('./images/banner1.png')] bg-center bg-cover bg-no-repeat h-[600px]">
         <div
@@ -113,7 +120,7 @@
           <a href="#slide4" class="btn btn-circle">❯</a>
         </div>
       </div>
-      <!-- slid 4 -->
+      <!-- 4 slid -->
       <div id="slide4"
         class="carousel-item relative w-full bg-[url('./images/banner4.png')] bg-center bg-cover bg-no-repeat h-[600px]">
         <div
@@ -130,29 +137,30 @@
       </div>
 
     </div>
-    <div class="absolute w-[1000px] hidden lg:block ml-36 -mt-20 bg-white justify-center items-center p-10 drop-shadow-2xl rounded ">
-     <div class="grid grid-cols-5">
-      <div>
-        <img src="./images/fruit1.png" alt="">
-        <p class="ml-7">Strawberry</p>
+    <div
+      class="absolute w-[1000px] hidden lg:block ml-36 -mt-20 bg-white justify-center items-center p-10 drop-shadow-2xl rounded ">
+      <div class="grid grid-cols-5">
+        <div>
+          <img src="./images/fruit1.png" alt="">
+          <p class="ml-7">Strawberry</p>
+        </div>
+        <div>
+          <img src="./images/fruit2.png" alt="">
+          <p class="ml-7">Strawberry</p>
+        </div>
+        <div>
+          <img src="./images/fruit3.png" alt="">
+          <p class="ml-7">Strawberry</p>
+        </div>
+        <div>
+          <img src="./images/fruit4.png" alt="">
+          <p class="ml-7">Strawberry</p>
+        </div>
+        <div>
+          <img src="./images/fruit5.png" alt="">
+          <p class="ml-7">Strawberry</p>
+        </div>
       </div>
-      <div>
-        <img src="./images/fruit2.png" alt="">
-        <p class="ml-7">Strawberry</p>
-      </div>
-      <div>
-        <img src="./images/fruit3.png" alt="">
-        <p class="ml-7">Strawberry</p>
-      </div>
-      <div>
-        <img src="./images/fruit4.png" alt="">
-        <p class="ml-7">Strawberry</p>
-      </div>
-      <div>
-        <img src="./images/fruit5.png" alt="">
-        <p class="ml-7">Strawberry</p>
-      </div>
-     </div>
     </div>
 
   </header>
@@ -161,7 +169,7 @@
   <main class="container mx-auto font-family">
 
     <!-- deal of the day section -->
-    <div class="flex justify-between items-center mt-52 flex-col lg:flex-row">
+    <div class="flex w-[95%] mx-auto justify-between items-center mt-20 lg:mt-52 flex-col lg:flex-row">
       <div class="">
         <h3 class="text-2xl text-center lg:text-start lg:text-5xl  mb-6 font-extrabold">Deal of the day</h3>
         <p class="font-bold text-center lg:text-start"> Contrary to popular belief, is not simply random text. It has
@@ -199,9 +207,9 @@
     </div>
 
 
-    <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
       <!-- card 1 -->
-      <div class="card h-full flex flex-col items-center  p-8 border">
+      <div class="card h-full  w-[95%] lg:w-auto mx-auto flex flex-col items-center  p-8 border">
         <div class="">
 
           <figure> <img src="./images/fruit6.png" alt=""></figure>
@@ -248,7 +256,7 @@
       </div>
 
       <!-- card 2 -->
-      <div class="card h-full flex flex-col items-center  p-8 border">
+      <div class="card h-full flex flex-col items-center w-[95%] lg:w-auto mx-auto   p-8 border">
         <div class="">
 
           <figure> <img src="./images/fruit7.png" alt=""></figure>
@@ -295,7 +303,7 @@
       </div>
 
       <!-- card 3 -->
-      <div class="card h-full flex flex-col items-center  p-8 border">
+      <div class="card h-full flex flex-col items-center w-[95%] lg:w-auto mx-auto   p-8 border">
         <div class="">
 
           <figure> <img src="./images/fruit8.png" alt=""></figure>
@@ -342,7 +350,7 @@
       </div>
 
       <!-- card 4 -->
-      <div class="card h-full flex flex-col items-center  p-8 border">
+      <div class="card h-full flex flex-col items-center w-[95%] lg:w-auto mx-auto   p-8 border">
         <div class="">
 
           <figure> <img src="./images/fruit9.png" alt=""></figure>
@@ -389,7 +397,7 @@
 
     </div>
 
-    <div class="flex justify-center mt-12">
+    <div class="flex hidden justify-center mt-12">
       <button class=" bg-[#F85559] text-white rounded-xl px-6 py-5  text-xl w-32 ">Shop All</button>
     </div>
 
@@ -473,7 +481,7 @@
 
 
     <!-- Why Choose Us -->
-    <section class="mt-32 ">
+    <section class="mt-32 container mx-auto">
       <h2 class="text-5xl font-bold text-center mb-5">Why Choose Us</h2>
       <p class="text-center sp">Contrary to popular belief, is not simply random text. It has roots in a piece of
         classical <br>
@@ -481,40 +489,40 @@
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-10">
         <!-- first part -->
-        <div class="space-y-10">
-          <div class="flex items-center gap-6">
+        <div class="space-y-10 lg:order-1 order-2">
+          <div class="flex lg:flex-row flex-col  items-center gap-6">
             <div class="bg-gray-300 px-4 py-3  rounded-full text-black">
               <i class="fa fa-solid fa-users"></i>
             </div>
-            <div>
+            <div class="lg:text-start text-center">
               <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
-              <hr class="border-b-2 border-gray-200 w-28 mt-4">
+              <hr class="border-b-2 border-gray-200 lg:mx-0 mx-auto w-28 mt-4">
               <p class="font-medium text-[#121212] mt-4">Professional employees are there for you to pick the most
                 amazing and fresh fruits.</p>
 
             </div>
 
           </div>
-          <div class="flex items-center gap-6">
+          <div class="flex lg:flex-row flex-col items-center gap-6">
             <div class="bg-gray-300  px-4 py-3 rounded-full text-black">
               <i class="fa fa-regular fa-heart"></i>
             </div>
-            <div>
+            <div class="lg:text-start text-center">
               <h3 class="text-2xl font-extrabold">Fresh is Best</h3>
-              <hr class="border-b-2 border-gray-200 w-28 mt-4">
+              <hr class="border-b-2 border-gray-200 lg:mx-0 mx-auto w-28 mt-4">
               <p class="font-medium text-[#121212] mt-4">Professional employees are there for you to pick the most
                 amazing and fresh fruits.</p>
 
             </div>
 
           </div>
-          <div class="flex items-center gap-6">
+          <div class="flex lg:flex-row flex-col  items-center gap-6">
             <div class="bg-gray-300 px-4 py-3 rounded-full text-black">
               <i class="fa fa-solid fa-gift"></i>
             </div>
-            <div>
+            <div class="lg:text-start text-center">
               <h3 class="text-2xl font-extrabold">Gift Certificates</h3>
-              <hr class="border-b-2 border-gray-200 w-28 mt-4">
+              <hr class="border-b-2 border-gray-200 lg:mx-0 mx-auto w-28 mt-4">
               <p class="font-medium text-[#121212] mt-4">Professional employees are there for you to pick the most
                 amazing and fresh fruits.</p>
 
@@ -524,28 +532,28 @@
         </div>
 
         <!-- second part -->
-        <div class="">
+        <div class="lg:order-2 order-1">
           <div class="col-span-3">
             <img class="h-[424px]" src="./images/whychoose1.png" alt="">
           </div>
         </div>
         <!-- third part  -->
-        <div class="space-y-10">
-          <div class="flex items-center gap-6">
-            <div class="text-right">
+        <div class="space-y-10 order-3">
+          <div class="flex lg:flex-row flex-col-reverse  items-center gap-6">
+            <div class="text-center  lg:text-right">
               <h3 class="text-2xl font-extrabold">Integrated Supplier</h3>
-              <hr class="border-b-2 ml-60 border-gray-200 w-28 mt-4 ">
+              <hr class="border-b-2 mx-auto lg:ml-[210px] border-gray-200 w-28 mt-4 ">
               <p class="font-medium text-[#121212] mt-4">Professional employees are there for you to pick the most
                 amazing and fresh fruits.</p>
             </div>
             <div class="bg-gray-300 px-4 py-3 rounded-full text-black">
-              <i class="fa-solid fa-users"></i>
+              <i class="fa-solidn fa fa-carrot"></i>
             </div>
           </div>
-          <div class="flex items-center gap-6">
-            <div class="text-right">
+          <div class="flex  lg:flex-row flex-col-reverse items-center gap-6">
+            <div class="text-center  lg:text-right">
               <h3 class="text-2xl font-extrabold">Sustainable Practice</h3>
-              <hr class="border-b-2 ml-60 border-gray-200 w-28 mt-4 ">
+              <hr class="border-b-2 mx-auto lg:ml-[210px] border-gray-200 w-28 mt-4">
               <p class="font-medium text-[#121212] mt-4">Professional employees are there for you to pick the most
                 amazing and fresh fruits.</p>
             </div>
@@ -553,10 +561,10 @@
               <i class="fa fa-solid fa-ice-cream"></i>
             </div>
           </div>
-          <div class="flex items-center gap-6">
-            <div class="text-right">
+          <div class="flex  lg:flex-row  flex-col-reverse items-center gap-6">
+            <div class="text-center  lg:text-right">
               <h3 class="text-2xl font-extrabold">The Benefits Only</h3>
-              <hr class="border-b-2 ml-60 border-gray-200 w-28 mt-4 ">
+              <hr class="border-b-2 mx-auto lg:ml-[210px] border-gray-200  w-28 mt-4 ">
               <p class="font-medium text-[#121212] mt-4">Professional employees are there for you to pick the most
                 amazing and fresh fruits.</p>
             </div>
@@ -572,12 +580,12 @@
   </main>
 
   <!-- footer section -->
-  <footer class="footer mt-32 footer-center pt-24 pb-24  bg-black">
-    <div class=" items-center justify-center pr-10 flex gap-4">
+  <footer class="footer  mt-32 footer-center pt-24 pb-24  bg-black">
+    <div class=" items-center  justify-center pr-10 flex gap-4">
       <img src="./images/logo.png" alt="">
       <h3 class="text-3xl  font-bold text-white">Fruit Burst</h3>
     </div>
-    <div class="grid grid-flow-col  font-bold text-white gap-4">
+    <div class="flex flex-wrap w-[60%]  justify-center font-bold text-white gap-4">
       <a class="link link-hover">Home</a>
       <a class="link link-hover">About Us</a>
       <a class="link link-hover">Shop</a>
